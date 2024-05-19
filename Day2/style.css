@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    background: #f00;
+    display: grid;
+    grid-template-rows: 10vh;
+    grid-template-columns: 60% 10% 15% 15%;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.b1{
+    justify-self: start;
+}
