@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 2vmax 0;
+  font-size: 3vw;
+}
+
+.inpBox,
+.tasks {
+  padding: 2vw 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#inptask {
+  font-size: 2vmax;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 1vmax;
+  border: 2px solid #dadada;
+  outline-color: royalblue;
+}
+
+.add ,.tasks button{
+  margin: 0 1vmax;
+  font-size: 2vmax;
+  padding: 1vmax 3vmax;
+  border-radius: 0.5rem;
+}
+
+.add {
+    background-color: rgb(125, 253, 127);
+    transition: all 1s ease;
+  }
+.add:hover{
+      transform: scale(1.05);
+      background-color: rgb(179, 255, 180);
+    }
+
+
+.errMsg {
+  font-size: 2vmax;
+  color: red;
+  text-align: start;
+  padding-left: 5vmax;
+}
+
+.tasks{
+    flex-direction: column;
+}
+
+.tasks div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 1vw;
+    justify-content: space-between;
+}
+
+.tasks li {
+  font-size: 2.5vmax;
+}
+
+.tasks li::marker{
+    content: '';
+}
+
+.tasks button{
+  background-color: rgb(255, 46, 46);
+  transition: all 1s ease;
+}
+.tasks button:hover{
+    transform: scale(1.05);
+  background-color: rgb(255, 112, 112);
+}
