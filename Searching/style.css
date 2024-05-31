@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+main {
+  height: 100%;
+  width: 100%;
+}
+
+
+.container {
+    padding: 8vw 15vw;
+
+}
+
+input {
+  height: 5vw;
+  width: 100%;
+  font-size: 2vmax;
+  border-radius: 10px;
+  border: 2px solid #dadada;
+  padding: 20px;
+  outline-color: royalblue ;
+}
+
+.people {
+    margin-top: 20px;
+  height: 100%;
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.person img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}

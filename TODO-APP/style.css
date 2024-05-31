@@ -14,17 +14,19 @@ html,
 h1 {
   text-align: center;
   margin: 2vmax 0;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .inpBox,
 .tasks {
-  padding: 2vw 15vw;
+  padding: 2vw 9vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-#inptask {
+
+#inptext ,#inpdate{
+  width: 40%;
   font-size: 2vmax;
   border-radius: 5px;
   font-weight: 500;
@@ -53,6 +55,7 @@ h1 {
 .errMsg {
   font-size: 2vmax;
   color: red;
+  margin-bottom: 2vw;
   text-align: start;
   padding-left: 5vmax;
 }
@@ -61,27 +64,68 @@ h1 {
     flex-direction: column;
 }
 
-.tasks div{
+.task{
     width: 100%;
     height: 100%;
+    border: 1px solid rgb(170, 164, 164);
+    border-radius: 8px;
+    box-shadow: 0 0 20px #302e2e;
     display: flex;
     margin: 1vw;
+    padding: 5px 1vw;
     justify-content: space-between;
 }
 
-.tasks li {
-  font-size: 2.5vmax;
+ .task {
+  font-size: 1.5vmax;
+  font-weight: 400;
+  font-family:cursive;
 }
 
-.tasks li::marker{
-    content: '';
+.task .name{
+  text-wrap: wrap;
 }
-
 .tasks button{
-  background-color: rgb(255, 46, 46);
+  align-self: center;
+  height: 9vmin;
+  background-color:rgb(255, 52, 52);
+  color: #fff;
   transition: all 1s ease;
 }
 .tasks button:hover{
-    transform: scale(1.05);
-  background-color: rgb(255, 112, 112);
+  transform: scale(1.05);
+  background-color: rgb(255, 67, 67);
+}
+
+
+
+
+
+@media (max-width: 425px) {
+  
+  h1 {
+    font-size: 7vw;
+  }
+  
+  .inpBox {
+    padding: 2vw 10vw;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+  }
+  
+  
+  #inptext ,#inpdate{
+    width:100%;
+    margin-bottom: 0.3rem;
+    
+  }
+
+  .tasks button{
+    height: 11vmin;
+  }
+  
+  .task{
+    font-size: 2vmax;
+  }
 }
